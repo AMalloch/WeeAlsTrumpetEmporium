@@ -1,5 +1,6 @@
 import Classes.Guitar;
 import ENUMs.GuitarType;
+import ENUMs.InstrumentType;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -11,7 +12,7 @@ public class GuitarTest {
 
     @Before
     public void setUp() throws Exception {
-        guitar = new Guitar("GIBSON Les Paul Traditional 2018", 1000, 1500, 6, GuitarType.ELECTRIC);
+        guitar = new Guitar("GIBSON Les Paul Traditional 2018", 1000, 1500, InstrumentType.CHORDOPHONE, 6, GuitarType.ELECTRIC);
 //        String name, int WholesalePrice, int RetailPrice, int numberOfStrings, GuitarType guitarType
     }
 
