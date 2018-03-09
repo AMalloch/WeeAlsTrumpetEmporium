@@ -7,10 +7,12 @@ import java.util.ArrayList;
 public class Shop {
     private String name;
     private ArrayList<Product> stock;
+    private int potentialProfit;
 
     public Shop(String name){
         this.name = name;
         this.stock = new ArrayList<>();
+        this.potentialProfit = potentialProfit;
     }
 
     public int countStock() {
@@ -27,7 +29,7 @@ public class Shop {
 
     public int totalPotentialProfit() {
         for (Product product : stock) {
-            product.calculateMarkup();
-        }
+            potentialProfit = product.calculateMarkup();
+        }  return potentialProfit;
     }
 }
