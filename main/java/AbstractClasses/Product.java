@@ -22,4 +22,8 @@ public abstract class Product implements ISell{
     public int getRetailPrice() {
         return retailPrice;
     }
+
+    public int getQuantity() {
+        return quantity;
+    }
 }

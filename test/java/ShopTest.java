@@ -51,6 +51,6 @@ public class ShopTest {
         shop.addToStock(product3);
         shop.addToStock(product2);
         shop.addToStock(product1);
-        assertEquals(910, shop.totalPotentialProfit());
+        assertEquals(3450, shop.totalPotentialProfit());
     }
 }
