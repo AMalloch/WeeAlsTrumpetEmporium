@@ -12,7 +12,7 @@ public class GuitarTest {
 
     @Before
     public void setUp() throws Exception {
-        guitar = new Guitar("GIBSON Les Paul Traditional 2018", 1000, 1500, InstrumentType.CHORDOPHONE, 6, GuitarType.ELECTRIC);
+        guitar = new Guitar("GIBSON Les Paul Traditional 2018", 1000, 1500, InstrumentType.CHORDOPHONE, 6, GuitarType.ELECTRIC, 1, "Sunburst", "Hazelwood");
 //        String name, int WholesalePrice, int RetailPrice, int numberOfStrings, GuitarType guitarType
     }
 
