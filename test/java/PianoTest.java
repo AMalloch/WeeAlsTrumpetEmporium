@@ -14,12 +14,27 @@ public class PianoTest {
 
     @Before
     public void setUp() throws Exception {
-        piano = new Piano("Steinway", 88, 1000, 1500, InstrumentType.CHORDOPHONE, 6, PianoType.GRAND, "Black", "Mahogany");
+        piano = new Piano("Steinway", 88, 1500, 1000, InstrumentType.CHORDOPHONE, 6, PianoType.GRAND, "Black", "Mahogany");
 //        String name, int WholesalePrice, int RetailPrice, int numberOfStrings, GuitarType guitarType
     }
 
     @Test
     public void canPlay(){
         assertEquals("I am playing a Piano!", piano.playInstrument("Piano!"));
+    }
+
+    @Test
+    public void canGetWholeSalePrice(){
+        assertEquals(1000, piano.getWholeSalePrice());
+    }
+
+    @Test
+    public void canGetRetailPrice(){
+        assertEquals(1500, piano.getRetailPrice());
+    }
+
+    @Test
+    public void canCalculateMarkup(){
+        assertEquals(500, piano.calculateMarkup());
     }
 }

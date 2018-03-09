@@ -9,12 +9,18 @@ public class Piano extends Instrument {
     private int numberOfKeys;
     private PianoType pianoType;
 
-    public Piano(String name, int numberOfKeys, int WholesalePrice, int RetailPrice, InstrumentType instrumentType, int quantity, PianoType pianoType, String colour, String material) {
-        super(name, WholesalePrice, RetailPrice, instrumentType, quantity, colour, material);
+    public Piano(String name, int numberOfKeys, int retailPrice, int wholesalePrice, InstrumentType instrumentType, int quantity, PianoType pianoType, String colour, String material) {
+        super(name, wholesalePrice, retailPrice, instrumentType, quantity, colour, material);
     }
 
     @Override
      public String playInstrument(String instrument) {
          return null;
      }
- }
+
+    @Override
+    public int calculateMarkup() {
+        return getRetailPrice() - getWholeSalePrice();
+    }
+
+}
