@@ -18,4 +18,9 @@ public class DrumStickTest {
     public void canGetRetailPrice(){
         assertEquals(30, drumStick.getRetailPrice());
     }
+
+    @Test
+    public void canGetWholeSalePrice(){
+        assertEquals(20, drumStick.getWholeSalePrice());
+    }
 }
