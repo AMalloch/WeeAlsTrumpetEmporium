@@ -13,6 +13,6 @@ public class DrumStick extends Accessorie{
 
     @Override
     public int calculateMarkup() {
-        return 0;
+        return getRetailPrice() - getWholeSalePrice();
     }
 }
