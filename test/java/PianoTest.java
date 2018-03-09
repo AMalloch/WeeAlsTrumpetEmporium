@@ -20,7 +20,7 @@ public class PianoTest {
 
     @Test
     public void canPlay(){
-        assertEquals("I am playing a Piano!", piano.playInstrument("Piano!"));
+        assertEquals("I'm playing a Piano!", piano.playInstrument("Piano!"));
     }
 
     @Test
