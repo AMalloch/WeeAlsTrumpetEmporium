@@ -14,18 +14,17 @@ import static org.junit.Assert.assertEquals;
 
 public class ShopTest {
 
-    Piano piano;
-    Guitar guitar;
-    DrumStick drumStick;
     Shop shop;
-    Product product;
+    Product product1;
+    Product product2;
+    Product product3;
 
     @Before
     public void setUp() throws Exception {
         shop = new Shop("WeeAlsTrumpetEmporioum");
-        piano = new Piano("Steinway", 88, 1500, 1000, InstrumentType.CHORDOPHONE, 6, PianoType.GRAND, "Black", "Mahogany");
-        guitar = new Guitar("GIBSON Les Paul Traditional 2018", 700, 300, InstrumentType.CHORDOPHONE, 6, GuitarType.ELECTRIC, 1, "Sunburst", "Hazelwood");
-        drumStick = new DrumStick("Vic Furth", 30, 20, 5, DrumStickType.BRUSHES);
+        product1 = new Piano("Steinway", 88, 1500, 1000, InstrumentType.CHORDOPHONE, 6, PianoType.GRAND, "Black", "Mahogany");
+        product2 = new Guitar("GIBSON Les Paul Traditional 2018", 700, 300, InstrumentType.CHORDOPHONE, 6, GuitarType.ELECTRIC, 1, "Sunburst", "Hazelwood");
+        product3 = new DrumStick("Vic Furth", 30, 20, 5, DrumStickType.BRUSHES);
     }
 
     @Test
@@ -35,15 +34,23 @@ public class ShopTest {
 
     @Test
     public void canAddProductToStock(){
-        shop.addToStock(product);
+        shop.addToStock(product1);
         assertEquals(1, shop.countStock());
     }
 
     @Test
     public void canRemoveProductFromStock(){
-        shop.addToStock(product);
-        shop.addToStock(product);
+        shop.addToStock(product1);
+        shop.addToStock(product1);
         shop.removeStock();
         assertEquals(1, shop.countStock());
+    }
+
+    @Test
+    public void totalPotentialProfit(){
+        shop.addToStock(product1);
+        shop.addToStock(product2);
+        shop.addToStock(product3);
+        assertEquals(910, shop.totalPotentialProfit());
     }
 }
