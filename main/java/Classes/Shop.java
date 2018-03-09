@@ -21,4 +21,7 @@ public class Shop {
         this.stock.add(product);
     }
 
+    public void removeStock() {
+        this.stock.remove(0);
+    }
 }
