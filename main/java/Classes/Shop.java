@@ -29,7 +29,8 @@ public class Shop {
 
     public int totalPotentialProfit() {
         for (Product product : stock) {
-            potentialProfit = product.calculateMarkup();
-        }return potentialProfit;
+            potentialProfit += product.calculateMarkup();
+        }
+        return potentialProfit;
     }
 }
