@@ -48,9 +48,9 @@ public class ShopTest {
 
     @Test
     public void totalPotentialProfit(){
-        shop.addToStock(product1);
-        shop.addToStock(product2);
         shop.addToStock(product3);
+        shop.addToStock(product2);
+        shop.addToStock(product1);
         assertEquals(910, shop.totalPotentialProfit());
     }
 }
