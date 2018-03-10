@@ -25,8 +25,13 @@ public class DrumStickTest {
     }
 
     @Test
-    public void canCalculateMarkup(){
-        assertEquals(50, drumStick.calculateMarkupIndividual());
+    public void canCalculateMarkupIndividually(){
+        assertEquals(10, drumStick.calculateMarkupIndividual());
+    }
+
+    @Test
+    public void canCalculateMarkupByQuantity(){
+        assertEquals(50, drumStick.calculateMarkupAll());
     }
 
     @Test
