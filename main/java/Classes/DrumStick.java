@@ -7,8 +7,9 @@ public class DrumStick extends Accessory {
 
     private DrumStickType drumStickType;
     private String material;
+    private int Length;
 
-    public DrumStick(String name, int retailPrice, int wholesalePrice, int quantity, DrumStickType drumStickType, String material) {
+    public DrumStick(String name, int retailPrice, int wholesalePrice, int quantity, DrumStickType drumStickType, String material, int length) {
         super(name, retailPrice, wholesalePrice, quantity);
     }
 

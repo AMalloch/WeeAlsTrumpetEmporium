@@ -11,7 +11,7 @@ public class DrumStickTest {
 
     @Before
     public void setUp() throws Exception {
-        drumStick = new DrumStick("Vic Furth", 30, 20, 5, DrumStickType.BRUSHES, "Oak");
+        drumStick = new DrumStick("Vic Firth", 30, 20, 5, DrumStickType.BRUSHES, "Oak", 16);
     }
 
     @Test

@@ -24,7 +24,7 @@ public class ShopTest {
         shop = new Shop("WeeAlsTrumpetEmporioum");
         product1 = new Piano("Steinway", 88, 1500, 1000, InstrumentType.CHORDOPHONE, 6, PianoType.GRAND, "Black", "Mahogany");
         product2 = new Guitar("GIBSON Les Paul Traditional 2018", 700, 300, InstrumentType.CHORDOPHONE, 6, GuitarType.ELECTRIC, 1, "Sunburst", "Hazelwood");
-        product3 = new DrumStick("Vic Furth", 30, 20, 5, DrumStickType.BRUSHES, "Oak");
+        product3 = new DrumStick("Vic Furth", 30, 20, 5, DrumStickType.BRUSHES, "Oak", 16);
     }
 
     @Test
