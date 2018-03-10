@@ -3,8 +3,12 @@ package ENUMs;
 public enum GuitarType {
     ELECTRIC("Electric"),
     ACOUSTIC("Acoustic"),
+    ELECTROACOUSTIC("Electro-Acoustic"),
     ARCHTOP("Archtop"),
-    STEEL("Steel");
+    STEEL("Steel"),
+    DOUBLENECK("Double Neck"),
+    BASS("Bass"),
+    UPRIGHTBASS("Upright Bass");
 
     private final String type;
 

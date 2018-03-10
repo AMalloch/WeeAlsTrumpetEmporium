@@ -7,11 +7,11 @@ import static org.junit.Assert.assertEquals;
 
 public class DrumStickTest {
 
-    DrumStick drumStick;
+    private DrumStick drumStick;
 
     @Before
     public void setUp() throws Exception {
-        drumStick = new DrumStick("Vic Furth", 30, 20, 5, DrumStickType.BRUSHES);
+        drumStick = new DrumStick("Vic Furth", 30, 20, 5, DrumStickType.BRUSHES, "Oak");
     }
 
     @Test

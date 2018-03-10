@@ -6,8 +6,9 @@ import ENUMs.DrumStickType;
 public class DrumStick extends Accessory {
 
     private DrumStickType drumStickType;
+    private String material;
 
-    public DrumStick(String name, int retailPrice, int wholesalePrice, int quantity, DrumStickType drumStickType) {
+    public DrumStick(String name, int retailPrice, int wholesalePrice, int quantity, DrumStickType drumStickType, String material) {
         super(name, retailPrice, wholesalePrice, quantity);
     }
 
