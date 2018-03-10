@@ -33,7 +33,7 @@ public class GuitarTest {
 
     @Test
     public void canCalculateMarkup(){
-        assertEquals(400, guitar.calculateMarkup());
+        assertEquals(400, guitar.calculateMarkupIndividual());
     }
 
     @Test

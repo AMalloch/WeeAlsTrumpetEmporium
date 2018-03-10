@@ -1,5 +1,6 @@
 package Interfaces;
 
 public interface ISell {
-    int calculateMarkup();
+    int calculateMarkupIndividual();
+    int calculateMarkupAll();
 }

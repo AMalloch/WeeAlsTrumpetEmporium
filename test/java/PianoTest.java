@@ -35,7 +35,12 @@ public class PianoTest {
 
     @Test
     public void canCalculateMarkup(){
-        assertEquals(3000, piano.calculateMarkup());
+        assertEquals(500, piano.calculateMarkupIndividual());
+    }
+
+    @Test
+    public void canCalculateMarkupByQuantity(){
+        assertEquals(3000, piano.calculateMarkupAll());
     }
 
     @Test

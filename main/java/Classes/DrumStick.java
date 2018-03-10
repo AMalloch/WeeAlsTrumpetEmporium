@@ -1,9 +1,9 @@
 package Classes;
 
-import AbstractClasses.Accessorie;
+import AbstractClasses.Accessory;
 import ENUMs.DrumStickType;
 
-public class DrumStick extends Accessorie{
+public class DrumStick extends Accessory {
 
     private DrumStickType drumStickType;
 
@@ -12,7 +12,12 @@ public class DrumStick extends Accessorie{
     }
 
     @Override
-    public int calculateMarkup() {
+    public int calculateMarkupIndividual() {
+        return getRetailPrice() - getWholeSalePrice();
+    }
+
+    @Override
+    public int calculateMarkupAll() {
         return (getRetailPrice() - getWholeSalePrice()) * getQuantity();
     }
 }

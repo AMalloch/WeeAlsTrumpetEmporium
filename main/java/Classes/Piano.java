@@ -19,7 +19,12 @@ public class Piano extends Instrument {
      }
 
     @Override
-    public int calculateMarkup() {
+    public int calculateMarkupIndividual() {
+        return getRetailPrice() - getWholeSalePrice();
+    }
+
+    @Override
+    public int calculateMarkupAll() {
         return (getRetailPrice() - getWholeSalePrice()) * getQuantity();
     }
 
